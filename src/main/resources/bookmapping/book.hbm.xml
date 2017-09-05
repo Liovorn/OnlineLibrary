@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.hotmail.solntsev_igor.Model.BookModel" table="BOOKS" catalog="Library">
+        <id name="book_id" type="java.lang.Integer">
+            <column name="BOOK_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="title" type="string">
+            <column name="TITLE" length="20" not-null="true" unique="true" />
+        </property>
+        <property name="author" type="string">
+            <column name="AUTHOR" length="20" not-null="true" unique="true" />
+        </property>
+        <property name="price" type="java.lang.Double">
+            <column name="PRICE" not-null="true" unique="true"/>
+        </property>
+        <property name="year" type="java.lang.String">
+            <column name="YEAR" length="4" unique="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

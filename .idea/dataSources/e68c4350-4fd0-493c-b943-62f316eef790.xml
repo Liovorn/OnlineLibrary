@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Library@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="Library">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="bookmanager"/>
+    <schema id="4" parent="1" name="flats"/>
+    <schema id="5" parent="1" name="information_schema"/>
+    <schema id="6" parent="1" name="MeasureDB"/>
+    <schema id="7" parent="1" name="mydb"/>
+    <schema id="8" parent="1" name="mysql"/>
+    <schema id="9" parent="1" name="newdb"/>
+    <schema id="10" parent="1" name="onlineDairy"/>
+    <schema id="11" parent="1" name="performance_schema"/>
+    <schema id="12" parent="1" name="sys"/>
+    <table id="13" parent="2" name="BOOKS"/>
+    <column id="14" parent="13" name="BOOK_ID">
+      <Position>1</Position>
+      <DataType>int(11) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="15" parent="13" name="AUTHOR">
+      <Position>2</Position>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="16" parent="13" name="TITLE">
+      <Position>3</Position>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="17" parent="13" name="PRICE">
+      <Position>4</Position>
+      <DataType>double|0</DataType>
+    </column>
+    <column id="18" parent="13" name="YEAR">
+      <Position>5</Position>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <key id="19" parent="13" name="PRIMARY">
+      <ColNames>BOOK_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
